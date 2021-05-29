@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let vietNam=['yêu','lớp','chào','tạm biệt'];
+		let usa=['love','class','hi','goodbye'];
+		let a = prompt('nhập từ tìm kiếm');
+		for (var i = 0; i < a.length; i++) {
+			if (vietNam.indexOf(a)!==-1) {
+			document.write(usa[vietNam.indexOf(a)]);
+			
+			continue;
+			a = prompt('nhập từ tìm kiếm');
+			}else if (usa.indexOf(a)!==-1) {
+				document.write(vietNam[usa.indexOf(a)]);
+				break;
+
+			}else
+			alert('từ điển giới hạn');
+		}
+	</script>
+</body>
+</html>

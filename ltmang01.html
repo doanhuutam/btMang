@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body> 
+	<!-- bài 1
+	<script type="text/javascript">
+		let a =[1,2,3,4,5,6,77,88,99]
+		let b = 0
+		for (var i = 0; i < a.length; i++) {
+			if (10<a[i]) {
+				document.write(a[i] +' ');
+				
+				document.write('nằm ở vị trí số '+i +'<br>')
+				b++;
+			}
+		}
+	</script> -->
+	<!-- bài2
+	<script type="text/javascript">
+		let a =[1,2,3,4,5]
+		let max=a[0]
+		for (var i = 0; i < a.length; i++) {
+
+			if (max<a[i]) {
+				max=a[i];
+
+			}
+		}
+		document.write('giá trị lớn nhất trong mảng là'+max)
+	</script> -->
+	<!-- bài3
+	<script type="text/javascript">
+		let a =[1,2,3,4,5]
+		let max=a[0]
+		let tb=0
+		for (var i = 0; i < a.length; i++) {
+			tb=(tb+a[i]/a.length);
+			
+			if (max<a[i]) {
+				max=a[i];
+				
+			}
+		}
+		document.write('giá trị lớn nhất trong mảng là'+max)
+		document.write('giá trị tb của mảng là '+tb)
+	</script> -->
+
+
+
+
+	
+
+<!-- 
+			bài 4 đảo ngước ptu trong mảng;
+	<script type="text/javascript">
+		let num =+prompt('nhập số lượng ptu');
+		while(num<=0){
+			alert('ptu trong mảng phải lớn hơn 0');
+
+		}
+		let arr=[];
+		for (var i = 0; i <num; i++) {
+			arr[i]=+prompt('nhập phần tử thứ ' +i);
+
+			
+		}
+		let index;
+		for (let fist = 0,last =arr.length-1;fist<last;fist++, last --) {
+			index=arr[fist];
+			arr[fist]=arr[last];
+			arr[last]=index;
+		
+		}document.write(arr);
+
+
+
+	</script> -->
+
+	<!-- bafi5:đếm số ng âm
+	<script type="text/javascript">
+		let num =+prompt('nhập số lượng ptu');
+		while(num<=0){
+			alert('ptu trong mảng phải lớn hơn 0');
+
+		}
+		let arr=[];
+		for (var i = 0; i <num; i++) {
+			arr[i]=+prompt('nhập phần tử thứ ' +i);
+		}
+		let index=0
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i]<0) {
+				index++;
+
+
+				document.write('ptu âm trong mảng là '+arr[i] +'nằm ở vị trí thứ '+i);
+				
+			}
+			
+		}document.write('có '+index +'giá trị âm' +'<br>')
+			
+	</script> -->
+
+	<!-- bài 6 :kiểm tra giá trị nhạp có tồn tại trong mảng k
+	<script type="text/javascript">
+		let arr =[0,2,3,4,5,6,7,8,8];
+		let a =+prompt('nhập giá trị tìm kiếm');
+		if (arr.indexOf(a,5)!==-1) {
+
+
+
+			// a là nơi tìm kiếm 5 là vị trí tìm kiếm
+			alert('giá trị trên nằm trong mảng ');
+		}else {
+			alert('ptu khong nằm trong mảng');
+		}
+	</script> -->
+	<!-- bài 7: xóa ptu khỏi mảng
+<script type="text/javascript">
+	let arr =[0,2,3,4,5,6,7,8,8];
+		let a =+prompt('nhập giá trị tìm kiếm');
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i]==a) {
+			arr.splice(i,1);
+			}
+		}document.write(arr);
+		
+	
+</script>
+ -->
+
+	<!-- 	bài 8:sắp xếp theo thứ tự giảm dần
+		<script type="text/javascript">
+			let a =[1,2,3,5,3,4,6,7,85,5]
+			let index;
+			for (var i = 0; i < a.length; i++) {
+				for (var j = i+1; j < a.length; j++) {
+					if (a[i]<a[j]) {
+						index=a[j];
+						a[j]=a[i];
+						a[i]=index;
+					}
+					
+				}
+				}document.write(a);
+
+		
+		
+		</script> -->
+
+
+		bài 9: nối 2 mảng với nhau
+		<script type="text/javascript">
+			let a =[1,2,3,4,5,6,7,8,9];
+			let b =[9,8,7,6,5,4,3,2,1];
+			let c = a.concat(b)
+			document.write(c);
+		</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- bài 1.hiển thị dạng chuỗi
+	<script type="text/javascript">
+		let mau =['red','blue','bleu','black'];
+		console.log(mau .toString());
+	</script> -->
+
+
+
+
+
+
+	<!-- bài 2 :ngăn cách số chẵn -->
+	<script type="text/javascript">
+		let a = prompt('nhập một dãy số nhé ');
+		let b=[a[0]];
+		for (var i = 1; i < a.length; i++) {
+			if ((a[i-1]%2==0)&&(a[i]%2==0)) {
+				b.push('-', a[i]);
+				
+			}else {
+					b.push(a[i]);
+				}
+		}
+		document.write(b.join(''));
+	</script>
+
+
+
+
+
+
+<!-- <script>
+	bài 3 đổi ký tự thường sang in hoa
+  var str = prompt('jojojo');
+  var res = str.toUpperCase();
+  document.write(res);
+
+</script> -->
+</body>
+</html>
